@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/download.css') }}">
+    <style>
+        body {
+            background-image: url('{{ url_for("static", path="page2.jpg") }}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Zip File Ready for Download</h1>
+        <p>The zip file is ready. Click the button below to download it.</p>
+        <a class="btn-download" href="{{ url_for('download_zip') }}">Download Zip</a>
+    </div>
+</body>
+</html>

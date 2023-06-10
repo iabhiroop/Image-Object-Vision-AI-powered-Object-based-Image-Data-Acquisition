@@ -1,0 +1,6 @@
+requests
+pika
+Pillow
+selenium
+cairosvg
+pymongo

@@ -1,0 +1,5 @@
+fastapi
+pika
+jinja2
+python-multipart
+pymongo
