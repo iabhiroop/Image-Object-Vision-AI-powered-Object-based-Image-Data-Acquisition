@@ -5,23 +5,23 @@ This is a FastAPI application that uses a variety of libraries and tools to perf
 ## Libraries/Tools/Techniques:
 |  |    |
 |---------------------|-----------------|
-| FastApi             |Pika         |
-|Microservices| Docker        |
-| Concurrency       | Pillow        |
-| Threading              | Selenium         |
-| Containers         | Cairosvg     |
-| Inter-thread Communication           | PyMongo           |
-| RabbitMQ          | Ultralytics  |
-| Asynchronous Communication |     Torch           |
-| Confluent_Kafka |       BeautifulSoup        |
-| Apache Kafka     |                 |
+| FastApi             |  Microservices       |
+|  Confluent_Kafka    |    Apache Kafka      |
+|Selenium |        RabbitMQ |
+|  Pillow             |     Threading     |
+|    Cairosvg      |    Containers  |
+|    PyMongo        |        Inter-thread Communication    |
+|      Ultralytics     | Concurrency   |
+|  Torch|        Asynchronous Communication        |
+| Pika |           Docker   |
+|    BeautifulSoup  |                 |
 |Standard libraries: json, shutil, requests, os, time, io, base64, threading|
 
 
 ## Uses:
 - To scrape a large number of webpages to aquire images.
 - Look for presence of specific objects in images (custom train yolov8 to find specific objects) from webpages.
-- Categorize images based on what they contain. 
+- Categorize images based on what they contain and save them into directories for further use.
 
 ## Summary of Application:
 - Receives the list of urls.
