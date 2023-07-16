@@ -34,25 +34,33 @@ This is a FastAPI application that uses a variety of libraries and tools to perf
 - Store a summary of result data in MongoDB.
  
 
-## There are four different versions:
+## Versions:
 
-### Beautiful Soup to scrape websites
+#### Version 1 - Beautiful Soup to scrape websites
 
-- Beautiful Soup is a library to extract data from HTML and XML files. It can be used to isolate the <img> tags in the webpages that are to be scraped. It works quickly as it does not render the page and only deals with static pages.
-- This version uses beautiful soup to quicky scrape image data from urls. It may not work very well with dynamic webpages but it is efficient.
+- Beautiful Soup library is used to extract images from URLs.
+- The <img> tags in the webpages that are to be scraped are isolated and the source retrieved.
+- It works quickly as it does not render the page and only deals with static pages.
+- This version uses beautiful soup to quicky scrape image data from urls.
+- It may not work very well with dynamic webpages but it is efficient with static webpages.
 
-### Selenium to render the page and scrape all images.
+#### Version 2 - Selenium to render the page and scrape all images.
 
-- Selenium is tool for automating web browser testing. It can be used to automate the process of interacting with a web browser. This can be used to extract data from dynamic websites that would otherwise be difficult or impossible to scrape.
-- This version uses selenium to render headless version of chrome to load urls and scrape images. Since the page has to load, it is slower than beautiful soup which takes html and xml.
+- Beautiful Soup is replaced with Selenium.
+- It automates the process of interacting with a web browser.
+- This can be used to extract data from dynamic websites that would otherwise be difficult or impossible to scrape with the html file.
+- This version uses selenium to render headless version of chrome to load urls and scrape images.
+- Since the page has to load, it is slower than beautiful soup which takes html and xml.
 
-### Docker and RabbitMQ to create a distributed application with Selenium.
-- Docker is a platform to build, run, and share applications within containers. Containers are executable units of software that package up code and all its dependencies. This makes it more versatile when moving from one device to another and to implement microservices.
-- RabbitMQ is a message broker software(AMQP). It provides a reliable and scalable way for communication. RabbitMQ can be used for communication between microservices. 
-- This version uses selenium. Containers and RabbitMQ are used to create scalable microservices that communicate with each other using RabbitMQ. This is faster and more efficient when working with several urls dealing with hundreds of images. 
+#### Version 3 - Docker and RabbitMQ to create a distributed application with Selenium.
+- Microservices is implemented to create more scalable version to handle multiple URLs.
+- This version uses Docker to create Containers. This makes it more versatile when moving from one device to another and to implement microservices.
+- RabbitMQ is used for communication between microservices. 
+- This version uses selenium. This is faster and more efficient when working with several urls dealing with hundreds of images. 
 
-### Kafka threads to create a concurrent application with Selenium.
-- Apache Kafka is a distributed streaming platform. Kafka is scalable and fault-tolerant. It can be use to create communication channels.
-- Docker is used to generate the kafka server.
-- Concurrency allows multiple tasks to be run simultaneously. Python threading library helps with the creation of multiple threads in a program.
+#### Version 4 - Kafka threads to create a concurrent application with Selenium.
+- Concurency is implemented to create a single application.
+- Apache Kafka server is created to host communication channels between the threads.
+- Docker is used to generate the kafka server. Kafka is scalable and fault-tolerant.
+- Python threading library is used to generate and run multiple threads in the program.
 - This version uses threading and kafka for inter-thread communication. It is easy to set up and scale as all the threading and communication is part of a single process.
