@@ -1,11 +1,11 @@
 # WebImageScrapper-ObjectBased-Detect-Scrape-Store-Search
 
 This is a FastAPI application to
-•	Scrape a large number of images
-•	Detect Objects in each image 
-•	Create folder for each object (if not already created) and place a copy of the image in each object folder 
-•	Maintain object/file name/path references in MongoDB 
-•	Choose objects from the available list and retrieve images having all desired objects
+-	Scrape a large number of images
+-	Detect Objects in each image 
+-	Create folder for each object (if not already created) and place a copy of the image in each object folder 
+-	Maintain object/file name/path references in MongoDB 
+-	Choose objects from the available list and retrieve images having all desired objects
 
 ![Project-Flow-v2](https://github.com/iabhiroop/WebImageScrapper-ObjectBased-Detect-Scrape-Store-Search/assets/100859103/05c46741-2dee-40aa-8106-18d92b65316f)
 
