@@ -1,4 +1,4 @@
-# WebImageScrapper-ObjectBased-Detect-Scrape-Store-Search
+# Image-Object Vision: AI powered Object based Image Data Acquisition
 
 This is a FastAPI application to:
 - Scrape a large number of images
